@@ -7,6 +7,8 @@ using namespace std;
 
 #include "../lib/cell.h"
 
+#ifndef GRID_LIB
+#define GRID_LIB
 class Grid{
 	private:
 		int rows;
@@ -20,3 +22,4 @@ class Grid{
 		Cell** getGrid(){return this->grid;};
 		void printGrid();
 };
+#endif

@@ -4,6 +4,8 @@
 #include <iterator>
 using namespace std;
 
+#ifndef CELL_LIB
+#define CELL_LIB
 class Cell{
 	private:
 		int row;
@@ -26,3 +28,4 @@ class Cell{
 		vector<Cell*> getNeighbors();
 		bool isLinked(Cell* cell);
 };
+#endif
