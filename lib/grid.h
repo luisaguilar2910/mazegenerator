@@ -18,6 +18,8 @@ class Grid{
 		Cell** grid;
 	public:
 		Grid(int rows,int cols);
+		int getRows(){return this->rows;};
+		int getCols(){return this->cols;};
 		int getSize(){return this->rows * this->cols;};
 		Cell** getGrid(){return this->grid;};
 		void printGrid();
