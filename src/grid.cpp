@@ -20,7 +20,6 @@ void Grid::configureCells(){
 	cout<<"configureCells"<<endl;
 	for(int i=0;i<this->rows;i++){
 		for(int j=0;j<this->cols;j++){
-			cout<<i<<" "<<j<<endl;
 			grid[i][j].set(i,j);
 			if(i>0)
 				grid[i][j].north = &grid[i-1][j];

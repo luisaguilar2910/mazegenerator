@@ -13,6 +13,8 @@ int main(int argc,char** argv){
 
 	Grid* grid = new Grid(rows,cols);
 
-	GridProcessor::process(grid,0);
+	double time = GridProcessor::process(grid,0);
+	grid->printGrid();
+	cout<<"Generation time: "<<time<<" s"<<endl;
 	return 0;
 }

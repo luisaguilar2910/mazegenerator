@@ -2,6 +2,7 @@
 using namespace std;
 #include <time.h>
 #include <stdlib.h>
+#include <ctime>
 
 #include "../lib/grid.h"
 
@@ -10,7 +11,7 @@ using namespace std;
 
 class GridProcessor{
 	public:
-		static void process(Grid* grid,int kind);
-		static void binaryTree (Grid* grid);
+		static double process(Grid* grid,int kind);
+		static double binaryTree (Grid* grid);
 };
 #endif
